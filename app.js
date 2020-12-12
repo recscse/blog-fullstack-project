@@ -66,7 +66,7 @@ app.use((error, req, res, next) =>{
 });
 
 mangoose.connect(
-    'mongodb+srv://brijeshyadav:admin@cluster0.4t0mr.mongodb.net/messages?retryWrites=true&w=majority'
+    'mongodb+srv://username:passward@cluster0.4t0mr.mongodb.net/messages?retryWrites=true&w=majority'  // for connect to mongoose connect your data base passward
 )
 .then(result => {
     const server = app.listen(8080);
